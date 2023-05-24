@@ -16,6 +16,10 @@
 		93699CEA2A1DE4040056E1E3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 93699CE92A1DE4040056E1E3 /* Realm */; };
 		93699CEC2A1DE4040056E1E3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 93699CEB2A1DE4040056E1E3 /* RealmSwift */; };
 		93699CF52A1DE6200056E1E3 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93699CF42A1DE6200056E1E3 /* TasksViewController.swift */; };
+		93699CF72A1DFA540056E1E3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93699CF62A1DFA540056E1E3 /* DataManager.swift */; };
+		93699CF92A1DFA6E0056E1E3 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93699CF82A1DFA6E0056E1E3 /* StorageManager.swift */; };
+		93699CFB2A1DFC830056E1E3 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93699CFA2A1DFC830056E1E3 /* TaskList.swift */; };
+		93699CFD2A1DFD8E0056E1E3 /* AllertControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93699CFC2A1DFD8E0056E1E3 /* AllertControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		93699CE02A1DE2C20056E1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93699CE22A1DE2C20056E1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93699CF42A1DE6200056E1E3 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		93699CF62A1DFA540056E1E3 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		93699CF82A1DFA6E0056E1E3 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		93699CFA2A1DFC830056E1E3 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		93699CFC2A1DFD8E0056E1E3 /* AllertControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllertControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +70,13 @@
 		93699CD32A1DE2BF0056E1E3 /* TaskListApp Realm */ = {
 			isa = PBXGroup;
 			children = (
-				93699CF32A1DE4BE0056E1E3 /* Resources */,
 				93699CF22A1DE4B80056E1E3 /* Apps */,
-				93699CF12A1DE4A90056E1E3 /* Storyboards */,
+				93699CEE2A1DE48A0056E1E3 /* Factories */,
 				93699CF02A1DE4A00056E1E3 /* Services */,
 				93699CEF2A1DE4960056E1E3 /* Models */,
-				93699CEE2A1DE48A0056E1E3 /* Factories */,
 				93699CED2A1DE47C0056E1E3 /* ViewControllers */,
+				93699CF12A1DE4A90056E1E3 /* Storyboards */,
+				93699CF32A1DE4BE0056E1E3 /* Resources */,
 			);
 			path = "TaskListApp Realm";
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 		93699CEE2A1DE48A0056E1E3 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				93699CFC2A1DFD8E0056E1E3 /* AllertControllerBuilder.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 		93699CEF2A1DE4960056E1E3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				93699CFA2A1DFC830056E1E3 /* TaskList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +109,8 @@
 		93699CF02A1DE4A00056E1E3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				93699CF62A1DFA540056E1E3 /* DataManager.swift */,
+				93699CF82A1DFA6E0056E1E3 /* StorageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,10 +220,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93699CFB2A1DFC830056E1E3 /* TaskList.swift in Sources */,
 				93699CD92A1DE2BF0056E1E3 /* TaskListViewController.swift in Sources */,
+				93699CF72A1DFA540056E1E3 /* DataManager.swift in Sources */,
 				93699CF52A1DE6200056E1E3 /* TasksViewController.swift in Sources */,
+				93699CF92A1DFA6E0056E1E3 /* StorageManager.swift in Sources */,
 				93699CD52A1DE2BF0056E1E3 /* AppDelegate.swift in Sources */,
 				93699CD72A1DE2BF0056E1E3 /* SceneDelegate.swift in Sources */,
+				93699CFD2A1DFD8E0056E1E3 /* AllertControllerBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PMP3UQ276;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TaskListApp Realm/Info.plist";
+				INFOPLIST_FILE = "TaskListApp Realm/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -391,7 +407,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7PMP3UQ276;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TaskListApp Realm/Info.plist";
+				INFOPLIST_FILE = "TaskListApp Realm/Apps/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
